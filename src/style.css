@@ -57,8 +57,9 @@ nav button:hover{
 
 .main-image{
     flex:1;
-    display:felx;
+    display:flex;
     justify-content:center;
+    position:relative;
 
     
 }
@@ -79,7 +80,27 @@ nav button:hover{
     box-shadow:0 25px 60px rgba(0, 0, 0.2);
 }
 
-
+.image-text{
+    position:absolute;
+    height:auto;
+    bottom:20px;
+    left:20px;
+    right:20px;
+    padding:15px 18px;
+    background:rgba(15, 14, 14, 0.8);
+    border-radius:8px;
+}
+.image-text h3{
+    margin:0 0 5px;
+    color:#d0b354;
+    font-size:13px;
+    letter-spacing:1px;
+}
+.image-text p{
+    margin:0;
+    color:#f7f3ed;
+    font-size: 13px;
+}
 .tagline{
     display:block;
     margin-bottom:15px;

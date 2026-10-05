@@ -87,6 +87,21 @@ export function loadHome(){
     image.alt ="Delicious restaurant dish";
 
     mainImage.appendChild(image);
+
+    const imageText = document.createElement("div");
+    imageText.classList.add("image-text");
+
+    const imageTitle = document.createElement("h3");
+    imageTitle.textContent = "CHEF'S SIGNATURE SELECTION";
+
+    const imageDescription = document.createElement("p");
+    imageDescription.textContent  = "Dry-Aged Prime Ribeye & Roasted Roots";
+
+    imageText.appendChild(imageTitle);
+    imageText.appendChild(imageDescription);
+    
+    mainImage.appendChild(imageText);
+    
     mainSection.appendChild(mainImage);
     
     content.appendChild(mainSection);
