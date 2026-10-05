@@ -16,6 +16,7 @@ header{
     padding:20px 8%;
 }
 header nav{
+    
     margin-left:auto;
     margin-right:30px;
     display:flex;
@@ -23,12 +24,24 @@ header nav{
     
 }
 
-.home-btn:hover,
-.menu-btn:hover,
-.contact-btn:hover{
-    background-color:#e9e906;
+nav button{
+    background-color:transparent;
+    border:none;
+    font-size:17px;
+    cursor:pointer;
+    font-weight:600px;
+    padding:8px 12px;
+    transition:all 0.3s ease;
 
-    color:#1f1f1e;
+    
+}
+nav button:hover{
+    background-color:#e9e906;
+    color:#060605;
+}
+
+.tagline{
+    color:#d0b354
 }
 .main-section{
     display:flex;
@@ -52,10 +65,10 @@ header nav{
 
 .main-image img{
     width:100%;
-    max-width:520;
-    height:500px;
+    max-width:520px;
+    height:auto;
     object-fit:cover;
-    border-radius:30px;
+    border-radius:20px;
     box-shadow:0 20px 50px rgba(0, 0, 0.15);
     transition:transform 0.4s ease, box-shadow 0.4s ease;
 
@@ -80,6 +93,7 @@ header nav{
     font-size:56px;
     line-height:1.1;
     max-width:600px;
+    font-style:italic;
 }
 
 .main-text p{
@@ -127,4 +141,24 @@ header nav{
     background-color:#e9e906;
     border-color:#d4af37;
     color:#1f1f1e;
+}
+
+.rating{
+    padding:20px 26px;
+    display:flex;
+    gap:150px;
+    margin-top:25px;
+}
+
+.rating-item h3{
+    margin:0 0 5px;
+}
+
+.rating-item span{
+    font-size:10px;
+    letter-spacing:1px;
+}
+
+.rating-title{
+    color:#d0b354;
 }

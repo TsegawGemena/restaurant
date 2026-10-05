@@ -28,6 +28,43 @@ export function loadHome(){
     const contactButton = document.createElement("button");
     contactButton.classList.add("secondary-btn");
     contactButton.textContent ="Contact Us";
+
+    const rating =document.createElement("div");
+    rating.classList.add("rating");
+
+    const michelin = document.createElement("div");
+    michelin.classList.add("rating-item");
+
+    const michelinTitle = document.createElement("h3");
+    michelinTitle.classList.add("rating-title");
+    michelinTitle.textContent="Michelin";
+
+    const michelinDescription = document.createElement("span");
+    michelinDescription.textContent = "GUIDE SELECTED 2026";
+
+    michelin.appendChild(michelinTitle );
+    michelin.appendChild(michelinDescription);
+
+
+    const score = document.createElement("div");
+    score.classList.add("rating-item");
+    
+    const scoreTitle = document.createElement("h3");
+    scoreTitle.classList.add("rating-title");
+    scoreTitle.textContent="4.9 / 5.0";
+
+
+    const scoreDescription = document.createElement("span");
+    scoreDescription.textContent = "OVER 1,200 REVIEWS";
+
+    score.appendChild(scoreTitle);
+    score.appendChild(scoreDescription);
+
+    rating.appendChild(michelin);
+    rating.appendChild(score);
+
+
+
     
     mainText.appendChild(tagline);
     mainText.appendChild(heading);
@@ -36,7 +73,8 @@ export function loadHome(){
     buttonContainer.appendChild(contactButton);
     mainText.appendChild(buttonContainer);
     
-
+    mainText.appendChild(rating);
+ 
     mainSection.appendChild(mainText);
     
     const mainImage =document.createElement("div");
@@ -50,7 +88,7 @@ export function loadHome(){
 
     mainImage.appendChild(image);
     mainSection.appendChild(mainImage);
-
+    
     content.appendChild(mainSection);
 
 
