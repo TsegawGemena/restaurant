@@ -18,6 +18,9 @@ export function loadHome(){
     const description =document.createElement("p");
     description.textContent ="Experience a culinary journey where time-honored techniques meet modern gastronomy. Every dish at Avaline is an ode to exquisite taste,curated with seasonal ingredients and uncompromising dedication.";
 
+    const buttonContainer=document.createElement("div");
+    buttonContainer.classList.add("button-container");
+
     const menuButton = document.createElement("button");
     menuButton.classList.add("primary-btn");
     menuButton.textContent ="Explore Our Menu";
@@ -29,8 +32,10 @@ export function loadHome(){
     mainText.appendChild(tagline);
     mainText.appendChild(heading);
     mainText.appendChild(description);
-    mainText.appendChild(menuButton);
-    mainText.appendChild(contactButton);
+    buttonContainer.appendChild(menuButton);
+    buttonContainer.appendChild(contactButton);
+    mainText.appendChild(buttonContainer);
+    
 
     mainSection.appendChild(mainText);
     
