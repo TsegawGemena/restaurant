@@ -20,7 +20,7 @@ export function loadHome(){
 
     const menuButton = document.createElement("button");
     menuButton.classList.add("primary-btn");
-    menuButton.textContent ="Explore Menu";
+    menuButton.textContent ="Explore Our Menu";
 
     const contactButton = document.createElement("button");
     contactButton.classList.add("secondary-btn");
