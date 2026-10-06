@@ -138,16 +138,61 @@ export function loadHome(){
     experience.textContent = " At Aveline, dining is an immersive sensory journey. Every element-from our carefully curated seasonal ingredients and sommelier cellar pairings to the acoustic balance and bespoke velvet banquenttes-is desgned to create unforgettable moments of culinary craft and ambience Our philosophy balance classic European techniques with innovative gastronomy,offering an unhurried sanctuary away from the bustle of the city.";
    
    
+    const experienceStats = document.createElement("div");
+    experienceStats.classList.add("experience-stats");
+
+    const chefsStat = document.createElement("div");
+    chefsStat.classList.add("stat-item");
+
+    const chefsNumber = document.createElement("h3");
+    chefsNumber.textContent = "15+"
+
+    const chefsLabel = document.createElement("span");
+    chefsLabel.textContent = "Master chefs";
+
+    chefsStat.appendChild(chefsNumber);
+    chefsStat.appendChild(chefsLabel);
+
+    const produceStat = document.createElement("div");
+    produceStat.classList.add("stat-item");
+
+    const produceNumber = document.createElement("h3");
+    produceNumber.textContent = "100%";
+
+    const producelabel = document.createElement("span");
+    producelabel.textContent = "Organic Produce";
+
+    produceStat.appendChild(produceNumber);
+    produceStat.appendChild(producelabel);
+     
+    const winStat = document.createElement("div");
+    winStat.classList.add("stat-item");
+
+    const wineNumber = document.createElement("h3");
+    wineNumber.textContent = "350+";
+
+    const wineLabel = document.createElement("span");
+    wineLabel.textContent = "curated Wines";
+
+    winStat.appendChild(wineNumber);
+    winStat.appendChild(wineLabel);
+    experienceStats.appendChild(chefsStat);
+    experienceStats.appendChild(produceStat);
+    experienceStats.appendChild(winStat);
+
+    
     experienceText.appendChild(aboutLine);
-     experienceText.appendChild(experienceHeading);
+    experienceText.appendChild(experienceHeading);
+    experienceText.appendChild(experience);
     experienceText.appendChild(experience);
    
      
-    
 
 
     experienceSection.appendChild(experienceImage);
     experienceSection.appendChild(experienceText);
+    experienceText.appendChild(experienceStats);
+
     content.append(experienceSection);
 
 

@@ -245,3 +245,26 @@ nav button:hover{
     font-size:17px;
     line-height:1.8;
 }
+.experience-stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+    padding-top: 25px;
+    border-top: 1px solid #292727;
+}
+
+.stat-item {
+    flex: 1;
+}
+
+.stat-item h3 {
+    margin: 0 0 5px;
+    color: #d0b354;
+    font-size: 25px;
+}
+
+.stat-item span {
+    font-size: 11px;
+    
+}
