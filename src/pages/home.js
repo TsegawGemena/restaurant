@@ -1,5 +1,6 @@
 import foodImage from "../images/restaurant-food.jpg";
-import exprienceimage from "../images/exprienceImage.webp";
+import experienceimage from "../images/experienceImage.webp";
+
 
 export function loadHome(){
     const content = document.querySelector("#content");
@@ -109,17 +110,48 @@ export function loadHome(){
     content.appendChild(mainSection);
 
 
-    const exprienceSection = document.createElement("section")
-    exprienceSection.classList.add("exprience-section");
+    const experienceSection = document.createElement("section");
+    experienceSection.classList.add("experience-section");
 
-    const exprienceImage = document.createElement("div");
-    exprienceImage.classList.add("exprience-image");
+    const experienceImage = document.createElement("div");
+    experienceImage.classList.add("experience-image");
 
-    const exprienceImg = document.createElement("img");
-    exprienceImg.src = exprienceimage;
-    exprienceImg.alt ="great exprience";
+    const experienceImg = document.createElement("img");
+    experienceImg.src = experienceimage;
+    experienceImg.alt ="great experience";
 
-    exprienceImage.appendChild(image);
+    experienceImage.appendChild(experienceImg);
+
+
+    const experienceText = document.createElement("div");
+    experienceText.classList.add("experience-text");
+
+    const aboutLine = document.createElement("span");
+    aboutLine.classList.add("about-line");
+    aboutLine.textContent = "ABOUT THE RESTAURANT";
+
+    const experienceHeading =document.createElement("h1");
+    experienceHeading.classList.add("about-experience");
+    experienceHeading.textContent = "An Atmosphere of Refined Elegance";
+
+    const experience = document.createElement("p");
+    experience.textContent = " At Aveline, dining is an immersive sensory journey. Every element-from our carefully curated seasonal ingredients and sommelier cellar pairings to the acoustic balance and bespoke velvet banquenttes-is desgned to create unforgettable moments of culinary craft and ambience Our philosophy balance classic European techniques with innovative gastronomy,offering an unhurried sanctuary away from the bustle of the city.";
+   
+   
+    experienceText.appendChild(aboutLine);
+     experienceText.appendChild(experienceHeading);
+    experienceText.appendChild(experience);
+   
+     
+    
+
+
+    experienceSection.appendChild(experienceImage);
+    experienceSection.appendChild(experienceText);
+    content.append(experienceSection);
+
+
+
 
 
 
