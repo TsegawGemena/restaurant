@@ -1,4 +1,6 @@
 import foodImage from "../images/restaurant-food.jpg";
+import exprienceimage from "../images/exprienceImage.webp";
+
 export function loadHome(){
     const content = document.querySelector("#content");
 
@@ -101,10 +103,26 @@ export function loadHome(){
     imageText.appendChild(imageDescription);
     
     mainImage.appendChild(imageText);
-    
+
     mainSection.appendChild(mainImage);
     
     content.appendChild(mainSection);
+
+
+    const exprienceSection = document.createElement("section")
+    exprienceSection.classList.add("exprience-section");
+
+    const exprienceImage = document.createElement("div");
+    exprienceImage.classList.add("exprience-image");
+
+    const exprienceImg = document.createElement("img");
+    exprienceImg.src = exprienceimage;
+    exprienceImg.alt ="great exprience";
+
+    exprienceImage.appendChild(image);
+
+
+
 
 
     
