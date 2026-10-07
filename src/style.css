@@ -282,3 +282,20 @@ nav button:hover{
 .aveline-experience p{
     color:#a29e9e;
 }
+
+.three-pillars{
+    display:flex;
+    gap:30px;
+    padding: 0 8% 70px;
+
+}
+
+.three-pillars > div{
+    flex:1;
+    min-width:0;
+    padding:25px;
+    border:1px solid #292727;
+    border-radius:8px;
+    background-color:#191717;
+    transition: transform 0.3s ease, border-color
+}
