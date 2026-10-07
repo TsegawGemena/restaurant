@@ -277,6 +277,43 @@ export function loadHome(){
 
     content.appendChild(threePillars);
 
+    const tastingContainer = document.createElement("div");
+    tastingContainer.classList.add("tasting-container");
+
+    const tastingLabel = document.createElement("span");
+    tastingLabel.textContent ="SEASONAL TASTING DEGUSTATION";
+
+    const tastingHeading = document.createElement("h1");
+    tastingHeading.textContent ="Discover Our Autumn / Winter Tasting Menu";
+
+    const tastingParagraph = document.createElement("p");
+    tastingParagraph.textContent ="Seven meticulously orchestrated courses paired with exceptional vintages curated by Head Sommelier Marc Laurent. Available nightly by reservation only.";
+
+    const tastingButton = document.createElement("div");
+    tastingButton.classList ="tasting-button";
+
+    const viewButton = document.createElement("button");
+    viewButton.classList.add("view-button");
+    viewButton.textContent = "View Seasonal Menu";
+
+    tastingButton.appendChild(viewButton);
+
+    const reserveButton = document.createElement("button");
+    reserveButton.classList.add("reserve-button");
+    reserveButton.textContent ="Reserve Tasting";
+
+    tastingButton.appendChild(reserveButton);
+
+    tastingContainer.appendChild(tastingLabel);
+    tastingContainer.appendChild(tastingHeading);
+    tastingContainer.appendChild(tastingParagraph);
+    tastingContainer.appendChild(tastingButton);
+
+    content.appendChild(tastingContainer);
+
+
+
+
 
 
 

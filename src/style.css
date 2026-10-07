@@ -299,3 +299,34 @@ nav button:hover{
     background-color:#191717;
     transition: transform 0.3s ease, border-color
 }
+
+.three-pillars > div:hover {
+    transform: translateX(-5px);
+    border-color:#d0b354;
+}
+
+.three-pillars h3 {
+    margin:0 0 12px;
+    
+
+}
+
+.three-pillars p{
+    margin:0 0 20px;
+    color:#a29e9e;
+    font-size:12px;
+    line-height:1.6;
+}
+
+.three-pillars span{
+    display:block;
+    color:#d0b354;
+    font-size:8px;
+    letter-spacing:1px;
+    font-weight:600;
+}
+
+.tasting-container{
+    display:block;
+    align-items: center;
+}
