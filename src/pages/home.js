@@ -280,6 +280,9 @@ export function loadHome(){
     const tastingContainer = document.createElement("div");
     tastingContainer.classList.add("tasting-container");
 
+    const tastingText = document.createElement("div");
+    tastingText.classList.add("tasting-text");
+
     const tastingLabel = document.createElement("span");
     tastingLabel.textContent ="SEASONAL TASTING DEGUSTATION";
 
@@ -290,7 +293,7 @@ export function loadHome(){
     tastingParagraph.textContent ="Seven meticulously orchestrated courses paired with exceptional vintages curated by Head Sommelier Marc Laurent. Available nightly by reservation only.";
 
     const tastingButton = document.createElement("div");
-    tastingButton.classList ="tasting-button";
+    tastingButton.classList.add("tasting-button");
 
     const viewButton = document.createElement("button");
     viewButton.classList.add("view-button");
@@ -304,9 +307,13 @@ export function loadHome(){
 
     tastingButton.appendChild(reserveButton);
 
-    tastingContainer.appendChild(tastingLabel);
-    tastingContainer.appendChild(tastingHeading);
-    tastingContainer.appendChild(tastingParagraph);
+
+    tastingText.appendChild(tastingLabel);
+
+    tastingText.appendChild(tastingHeading);
+    tastingText.appendChild(tastingParagraph);
+    
+    tastingContainer.appendChild(tastingText);
     tastingContainer.appendChild(tastingButton);
 
     content.appendChild(tastingContainer);

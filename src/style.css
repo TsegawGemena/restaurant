@@ -327,6 +327,81 @@ nav button:hover{
 }
 
 .tasting-container{
-    display:block;
+    display:flex;
     align-items: center;
+    justify-content:space;
+    gap:50px;
+    margin:70px 8%;
+    padding:30px;
+    border:1px solid #51472b;
+    border-radius:8px;
+    background-color: #292722;
+}
+
+.tasting-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.tasting-text span {
+    display: block;
+    margin-bottom: 10px;
+    color: #d0b354;
+    font-size: 9px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.tasting-text h2 {
+    margin: 0 0 10px;
+    font-size: 28px;
+    line-height: 1.2;
+    font-style: italic;
+}
+
+.tasting-text p {
+    margin: 0;
+    color: #a29e9e;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.tasting-button {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.tasting-button button {
+    padding: 12px 18px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    font-size: 11px;
+
+    
+}
+
+
+.view-button {
+
+    flex:1;
+    background-color:#1f1f1e;
+    color:white;
+    border:1px solid #1f1f1e;
+}
+
+.reserve-button{
+    flex:1;
+    background-color:transparent;
+    background-color:#1f1f1e;
+    color:white;
+    border:1px solid #1f1f1e;
+}
+
+.view-button:hover,
+.reserve-button:hover{
+    background-color:#e9e906;
+    border-color:#d4af37;
+    color:#1f1f1e;
 }
