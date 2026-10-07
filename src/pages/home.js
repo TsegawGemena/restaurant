@@ -193,7 +193,30 @@ export function loadHome(){
     experienceSection.appendChild(experienceText);
     experienceText.appendChild(experienceStats);
 
-    content.append(experienceSection);
+    content.appendChild(experienceSection);
+
+    const avelineExperience = document.createElement("div");
+    avelineExperience.classList.add("aveline-experience");
+   
+    const theAveline = document.createElement("span");
+    theAveline.classList.add("the-aveline");
+    theAveline.textContent = " - THE AVELINE EXPERIENCE -"
+    
+    const standardHeading = document.createElement("h1");
+    standardHeading.textContent ="An Uncompromising Standard";
+
+    const threePillars = document.createElement("P");
+    threePillars.textContent = "Three core pillars guide every service, delivering thoughtful hospitality and unmatched culinary finesse";
+    
+    
+    avelineExperience.appendChild(theAveline);
+    avelineExperience.appendChild(standardHeading);
+    avelineExperience.appendChild(threePillars);
+    
+
+
+    content.appendChild(avelineExperience);
+
 
 
 
