@@ -319,6 +319,138 @@ export function loadHome(){
     content.appendChild(tastingContainer);
 
 
+    const footer = document.createElement("footer");
+footer.classList.add("footer");
+
+
+// Footer main content
+const footerMain = document.createElement("div");
+footerMain.classList.add("footer-main");
+
+
+// Brand column
+const footerBrand = document.createElement("div");
+footerBrand.classList.add("footer-column");
+
+const brandName = document.createElement("h3");
+brandName.textContent = "✦ Aveline";
+
+const brandDescription = document.createElement("p");
+brandDescription.textContent =
+    "A sanctuary of elevated gastronomy and understated luxury. Every evening designed as an unhurried celebration of taste and craft.";
+
+footerBrand.appendChild(brandName);
+footerBrand.appendChild(brandDescription);
+
+
+// Hours column
+const hoursColumn = document.createElement("div");
+hoursColumn.classList.add("footer-column");
+
+const hoursTitle = document.createElement("h4");
+hoursTitle.textContent = "HOURS OF OPERATION";
+
+const hoursText = document.createElement("p");
+hoursText.textContent =
+    "Monday – Friday: 5:00 PM – 11:30 PM\nSaturday – Sunday: 4:30 PM – Midnight\nPrivate dining available upon request.";
+
+hoursColumn.appendChild(hoursTitle);
+hoursColumn.appendChild(hoursText);
+
+
+// Address column
+const addressColumn = document.createElement("div");
+addressColumn.classList.add("footer-column");
+
+const addressTitle = document.createElement("h4");
+addressTitle.textContent = "ADDRESS & LOCATION";
+
+const addressText = document.createElement("p");
+addressText.textContent =
+    "14 Berkeley Square, Mayfair\nLondon W1J 6BL, United Kingdom\nValet parking provided at front entrance.";
+
+addressColumn.appendChild(addressTitle);
+addressColumn.appendChild(addressText);
+
+
+// Reservations column
+const reservationsColumn = document.createElement("div");
+reservationsColumn.classList.add("footer-column");
+
+const reservationsTitle = document.createElement("h4");
+reservationsTitle.textContent = "RESERVATIONS NOTE";
+
+const reservationsText = document.createElement("p");
+reservationsText.textContent =
+    "Reservations open 30 days in advance.\nPhone: +44 (0) 20 7946 0912\nConcierge: reservations@aveline.com";
+
+reservationsColumn.appendChild(reservationsTitle);
+reservationsColumn.appendChild(reservationsText);
+
+
+// Social links
+const socialLinks = document.createElement("div");
+socialLinks.classList.add("social-links");
+
+const instagram = document.createElement("a");
+instagram.textContent = "Instagram";
+
+const facebook = document.createElement("a");
+facebook.textContent = "Facebook";
+
+const tripAdvisor = document.createElement("a");
+tripAdvisor.textContent = "TripAdvisor";
+
+socialLinks.appendChild(instagram);
+socialLinks.appendChild(facebook);
+socialLinks.appendChild(tripAdvisor);
+
+reservationsColumn.appendChild(socialLinks);
+
+
+// Add columns
+footerMain.appendChild(footerBrand);
+footerMain.appendChild(hoursColumn);
+footerMain.appendChild(addressColumn);
+footerMain.appendChild(reservationsColumn);
+
+footer.appendChild(footerMain);
+
+
+// Footer bottom
+const footerBottom = document.createElement("div");
+footerBottom.classList.add("footer-bottom");
+
+const copyright = document.createElement("p");
+copyright.textContent =
+    "© 2024 Aveline Restaurant Group. All rights reserved.";
+
+const legalLinks = document.createElement("div");
+legalLinks.classList.add("legal-links");
+
+const privacy = document.createElement("a");
+privacy.textContent = "Privacy Policy";
+
+const terms = document.createElement("a");
+terms.textContent = "Terms of Service";
+
+const press = document.createElement("a");
+press.textContent = "Press Inquiries";
+
+legalLinks.appendChild(privacy);
+legalLinks.appendChild(terms);
+legalLinks.appendChild(press);
+
+footerBottom.appendChild(copyright);
+footerBottom.appendChild(legalLinks);
+
+footer.appendChild(footerBottom);
+
+
+// Add footer to page
+content.appendChild(footer);
+
+
 
 
 
