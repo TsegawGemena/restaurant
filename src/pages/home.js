@@ -184,7 +184,6 @@ export function loadHome(){
     experienceText.appendChild(aboutLine);
     experienceText.appendChild(experienceHeading);
     experienceText.appendChild(experience);
-    experienceText.appendChild(experience);
    
      
 
@@ -205,17 +204,87 @@ export function loadHome(){
     const standardHeading = document.createElement("h1");
     standardHeading.textContent ="An Uncompromising Standard";
 
-    const threePillars = document.createElement("P");
-    threePillars.textContent = "Three core pillars guide every service, delivering thoughtful hospitality and unmatched culinary finesse";
+    const pillarsParagraph = document.createElement("P");
+    pillarsParagraph.textContent = "Three core pillars guide every service, delivering thoughtful hospitality and unmatched culinary finesse";
     
     
     avelineExperience.appendChild(theAveline);
     avelineExperience.appendChild(standardHeading);
-    avelineExperience.appendChild(threePillars);
+    avelineExperience.appendChild(pillarsParagraph);
     
 
 
     content.appendChild(avelineExperience);
+
+    const threePillars = document.createElement("div");
+    threePillars.classList.add("three-pillars");
+
+    const pillarOne = document.createElement("div");
+
+    const ingredientsHeading= document.createElement("h3");
+    ingredientsHeading.textContent ="Fresh Ingredients";
+
+    const pillarOneParagraph= document.createElement("p");
+    pillarOneParagraph.textContent = "Locally sourced daily from biodynamic farms and artisan purveyors, ensuring pristine flavor profiles and the absolute peak of sustainable seasonality.";
+
+    const pillarOneDescription = document.createElement("span");
+    pillarOneDescription.classList.add("pillar-one-description");
+    pillarOneDescription.textContent = "ZERO PESTICIDES . DAILY HARVEST";
+    
+    pillarOne.appendChild(ingredientsHeading);
+    pillarOne.appendChild(pillarOneParagraph);
+    pillarOne.appendChild(pillarOneDescription);
+
+    const pillarTwo = document.createElement("div");
+
+    const chefsHeading = document.createElement("h3");
+    chefsHeading.textContent = "Expert Chefs";
+
+
+
+    const pillarTwoParagraph = document.createElement("P");
+    pillarTwoParagraph.textContent = "Led by culinary visionaries with Michelin pedigree, our brigade merges ancestral open-fire traditions with groundbreaking modern gastronimic artistry."
+
+    const pillarTwoDescription = document.createElement("span");
+    pillarTwoDescription.classList.add("pillar-two-description");
+    pillarTwoDescription.textContent = "WORLD-CLASS TEAM . PRECISION";
+    
+
+    pillarTwo.appendChild(chefsHeading);
+    pillarTwo.appendChild(pillarTwoParagraph);
+    pillarTwo.appendChild(pillarTwoDescription);
+
+
+    const pillarThree = document.createElement("div");
+
+    const atmosphereHeading = document.createElement("h3");
+    atmosphereHeading.textContent ="Warm Atmosphere";
+
+    const pillarThreeParagraph = document.createElement("p");
+    pillarThreeParagraph.textContent = "Immerse yourself in intimate candlelight, handcrafted walnut accents, tailored acoustic warmth, and gracious hospitality attentive to your every need.";
+
+    const pillarThreeDescription = document.createElement("span");
+    pillarThreeDescription.classList.add("pillar-three-description");
+    pillarThreeDescription.textContent = "INTIMATE AMBIANCE . LIVE PIANO";
+    
+    pillarThree.appendChild(atmosphereHeading);
+    pillarThree.appendChild(pillarThreeParagraph);
+    pillarThree.appendChild(pillarThreeDescription);
+
+    threePillars.appendChild(pillarOne);
+    threePillars.appendChild(pillarTwo);
+    threePillars.appendChild(pillarThree);
+
+    content.appendChild(threePillars);
+
+
+
+
+
+
+
+
+
 
 
 
