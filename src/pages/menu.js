@@ -1,5 +1,10 @@
 export function loadMenu(){
 
+    const content = document.querySelector("#content");
+
+    const menuSection = document.createElement("section");
+    menuSection.classList.add("menu-section");
+
     const menuText = document.createElement("div");
     menuText.classList.add("menu-text");
 
@@ -15,5 +20,8 @@ export function loadMenu(){
     menuText.appendChild(menuLabel);
     menuText.appendChild(menuHeading);
     menuText.appendChild(menuParagraph);
+    menuSection.appendChild(menuText);
+
+    content.appendChild(menuSection);
 
 }
