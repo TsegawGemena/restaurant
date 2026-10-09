@@ -24,4 +24,4 @@ export function loadMenu(){
 
     content.appendChild(menuSection);
 
-}
+};

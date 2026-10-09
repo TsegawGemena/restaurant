@@ -2,7 +2,8 @@ import foodImage from "../images/restaurant-food.jpg";
 import experienceimage from "../images/experienceImage.webp";
 
 
-export function loadHome(){
+
+export function loadHome(onMenuClick, onContactClick){
     const content = document.querySelector("#content");
 
     const mainSection =document.createElement("section");
@@ -27,10 +28,12 @@ export function loadHome(){
     const menuButton = document.createElement("button");
     menuButton.classList.add("primary-btn");
     menuButton.textContent ="Explore Our Menu";
+    menuButton.addEventListener("click", onMenuClick);
 
     const contactButton = document.createElement("button");
     contactButton.classList.add("secondary-btn");
     contactButton.textContent ="Contact Us";
+    contactButton.addEventListener("click", onContactClick);
 
     const rating =document.createElement("div");
     rating.classList.add("rating");
@@ -298,12 +301,14 @@ export function loadHome(){
     const viewButton = document.createElement("button");
     viewButton.classList.add("view-button");
     viewButton.textContent = "View Seasonal Menu";
+    viewButton.addEventListener("click", onMenuClick);
 
     tastingButton.appendChild(viewButton);
 
     const reserveButton = document.createElement("button");
     reserveButton.classList.add("reserve-button");
     reserveButton.textContent ="Reserve Tasting";
+    reserveButton.addEventListener("click", onContactClick);
 
     tastingButton.appendChild(reserveButton);
 

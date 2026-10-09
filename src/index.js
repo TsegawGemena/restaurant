@@ -14,10 +14,25 @@ function showPage(pageFunction) {
     pageFunction();
 }
 
-homeButton.addEventListener("click", () => showPage(loadHome));
-menuButton.addEventListener("click", () => showPage(loadMenu));
-contactButton.addEventListener("click", () => showPage(loadContact));
+function showHome(){
+    showPage(() =>{
+        loadHome(
+            () => showPage(loadMenu),
+            () => showPage(loadContact)
+        );
+    });
+}
+homeButton.addEventListener("click", showHome);
 
+menuButton.addEventListener("click", showHome);
 
-loadHome();
+menuButton.addEventListener("click", () =>{
+    showPage(loadMenu);
+});
+
+contactButton.addEventListener("click", () =>{
+    showPage(loadContact);
+});
+showHome();
+
 
