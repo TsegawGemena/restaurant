@@ -279,6 +279,12 @@ nav button:hover{
     
 
 }
+.avelineExperience h1{
+    font-style:italic;
+    margin-bottom: 25px;
+
+}
+
 .aveline-experience p{
     color:#a29e9e;
 }
@@ -487,4 +493,31 @@ nav button:hover{
 
 .legal-links a:hover {
     color: #d0b354;
+}
+
+.menu-section{
+    
+    align-items:center;
+    
+    
+    padding:80px 8%;
+
+
+
+}
+
+.menu-text{
+    text-align:center;
+    
+
+}
+.menu-text span{
+    color:#d0b354;
+}
+.menu-text h1{
+    font-style: italic;
+    margin-bottom:25px;
+}
+.menu-text p{
+    color:#777;
 }
