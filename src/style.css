@@ -520,4 +520,5 @@ nav button:hover{
 }
 .menu-text p{
     color:#777;
+    white-space: pre-line;
 }

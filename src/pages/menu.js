@@ -1,3 +1,8 @@
+import starterOne from "../images/starterOne.jpg";
+import starterTwo from "../images/starterTwo.webp";
+import starterThree from "../images/starterThree.webp";
+
+
 export function loadMenu(){
 
     const content = document.querySelector("#content");
@@ -15,7 +20,7 @@ export function loadMenu(){
     menuHeading.textContent = "Discover Our Menu";
 
     const menuParagraph = document.createElement("p");
-    menuParagraph.textContent ="Immerse your senses in a carefully curated selection of fine dining masterpieces, crafted with locally sourced artisan ingredients and boundless passion.";
+    menuParagraph.textContent ="Immerse your senses in a carefully curated selection of fine dining masterpieces, \n"+" crafted  with locally sourced artisan ingredients and boundless passion.";
 
     menuText.appendChild(menuLabel);
     menuText.appendChild(menuHeading);
