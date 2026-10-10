@@ -495,50 +495,59 @@ nav button:hover{
     color: #d0b354;
 }
 
-.menu-section{
-    
-    align-items:center;
-    
-    
-    padding:80px 8%;
-
-
-
+/* MENU SECTION */
+.menu-section {
+    padding: 60px 8%;
+    background-color: #111;
+    box-sizing: border-box;
 }
 
-.menu-text{
-    text-align:center;
-    
+.menu-text {
+    max-width: 850px;
+    margin: 0 auto 60px;
+    text-align: center;
+    background-color: #111;
+}
 
+.menu-text span {
+    color: #d0b354;
 }
-.menu-text span{
-    color:#d0b354;
-}
-.menu-text h1{
+
+.menu-text h1 {
     font-style: italic;
-    margin-bottom:25px;
+    margin-bottom: 25px;
+    color: #f7f3ed;
 }
-.menu-text p{
-    color:#777;
+
+.menu-text p {
+    color: #777;
+    line-height: 1.6;
     white-space: pre-line;
 }
 
-
+/* STARTERS GRID */
 .starters-section {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
-    padding: 30px 4%;
+    padding: 30px 8%;
+    background-color: #111;
+    box-sizing: border-box;
+    align-items: stretch;
 }
 
+/* STARTER CARDS */
 .grilled-chicken,
 .crispy-spring,
 .bruschetta {
     min-width: 0;
     overflow: hidden;
     box-sizing: border-box;
+    background-color: #171717;
+    color: #f7f3ed;
 }
 
+/* STARTER IMAGES */
 .grilled-chicken-image,
 .crispy-spring-image,
 .bruschetta-image {
@@ -547,33 +556,49 @@ nav button:hover{
     aspect-ratio: 4 / 3;
     height: auto;
     object-fit: cover;
+     box-shadow:0 20px 50px rgba(0, 0, 0.15);
+    transition:transform 0.4s ease, box-shadow 0.4s ease;
+
+}
+.grilled-chicken-image:hover,
+.crispy-spring-image:hover,
+.bruschetta-image:hover{
+    transform:scale(1.03);
+    box-shadow:0 25px 60px rgba(0, 0, 0.2);
+}
+/* STARTER TEXT */
+.grilled-chicken-text,
+.crispy-spring-text,
+.bruschetta-text {
+    padding: 10px;
+    background-color: #171717;
+    box-sizing: border-box;
 }
 
-/* Keep three columns at every screen width */
-@media (max-width: 768px) {
-    .starters-section {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 10px;
-        padding: 20px 2%;
-    }
+.grilled-chicken-text h3,
+.crispy-spring-text h3,
+.bruschetta-text h3 {
+    margin: 0 0 12px;
+    color: #f7f3ed;
+    font-size: 20px;
+    line-height: 1.3;
+}
 
-    .grilled-chicken-text,
-    .crispy-spring-text,
-    .bruschetta-text {
-        padding: 8px;
-    }
+.grilled-chicken-text p,
+.crispy-spring-text p,
+.bruschetta-text p {
+    margin: 0 0 20px;
+    color: #777;
+    font-size: 15px;
+    line-height: 1.6;
+}
 
-    .grilled-chicken-text h3,
-    .crispy-spring-text h3,
-    .bruschetta-text h3 {
-        font-size: 13px;
-        overflow-wrap: anywhere;
-    }
-
-    .grilled-chicken-text p,
-    .crispy-spring-text p,
-    .bruschetta-text p {
-        font-size: 10px;
-        overflow-wrap: anywhere;
-    }
+.grilled-chicken-text span,
+.crispy-spring-text span,
+.bruschetta-text span {
+    display: block;
+    color: #f7f3ed;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: 24px;
 }
