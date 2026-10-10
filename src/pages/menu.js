@@ -10,6 +10,12 @@ export function loadMenu(){
     const menuSection = document.createElement("section");
     menuSection.classList.add("menu-section");
 
+    const menuSectionHeading = document.createElement("h2");
+    menuSectionHeading.classList.add("menu-section-heading");
+    menuSectionHeading.textContent = "Starters";
+
+   
+
     const menuText = document.createElement("div");
     menuText.classList.add("menu-text");
 
@@ -28,6 +34,7 @@ export function loadMenu(){
     menuSection.appendChild(menuText);
 
     content.appendChild(menuSection);
+     menuSection.appendChild(menuSectionHeading);
 
     const startersSection = document.createElement("div");
     startersSection.classList.add("starters-section");
