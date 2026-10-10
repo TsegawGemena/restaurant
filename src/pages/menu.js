@@ -51,9 +51,15 @@ export function loadMenu(){
 
     const grilledChickenTextParagraph = document.createElement("p");
     grilledChickenTextParagraph.textContent = "Tender, flame-grilled chicken skewers marinated in aromatic spices, served over fresh greens with a zesty lime wedge adn a creamy herb yogurt dip. A flavorful, satisfying starter with a smoky finish and refreshing touch.";
+    
+    const grilledChickenCategory = document.createElement("span");
+    grilledChickenCategory.classList.add("starter-category");
+    grilledChickenCategory.textContent = "GRILLED . CHEF'S SPECIAL";
 
     grilledChickenText.appendChild(grilledChickenHeading);
     grilledChickenText.appendChild(grilledChickenTextParagraph);
+    grilledChickenText.appendChild(grilledChickenCategory);
+
 
     grilledChicken.appendChild(grilledChickenText);
 
@@ -81,12 +87,20 @@ export function loadMenu(){
     
     const crispySpringParagraph = document.createElement("p");
     crispySpringParagraph.textContent = "Golden, crispy spring rolls filled with a delicious savor mixture of fresh vegetables and flavorful seasonings. Served hot with a tasty dipping sauce, they are the perfect crunchy and satisfying start to your meal.";
+    
+    
+    
+    const crispySpringCategory = document.createElement("span");
+    crispySpringCategory.classList.add("starter-category");
+    crispySpringCategory.textContent = "VEGETARIAN • CRISPY";
 
 
-   crispySpringText.appendChild(crispySpringHeading);
-   crispySpringText.appendChild(crispySpringParagraph);
 
-   crispySpring.appendChild(crispySpringText);
+    crispySpringText.appendChild(crispySpringHeading);
+    crispySpringText.appendChild(crispySpringParagraph);
+    crispySpringText.appendChild(crispySpringCategory);
+
+    crispySpring.appendChild(crispySpringText);
 
     const bruschetta = document.createElement("div");
     bruschetta.classList.add("bruschetta");
@@ -108,9 +122,16 @@ export function loadMenu(){
 
     const bruschettaParagraph = document.createElement("p");
     bruschettaParagraph.textContent ="A classic Italian starter featuring toasted slices of bread topped with juicy diced tomatoes, fresh basil, and a touch of olive oil. Light,fresh, and full of flavor, it is a delightful appetizer to enjoy before your main course.";
+    
+
+    const bruschettaCategory = document.createElement("span");
+    bruschettaCategory.classList.add("starter-category");
+    bruschettaCategory.textContent = "FRESH • VEGETARIAN";
+
 
     bruschettaText.appendChild(bruschettaHeading);
     bruschettaText.appendChild(bruschettaParagraph);
+        bruschettaText.appendChild(bruschettaCategory);
 
     bruschetta.appendChild(bruschettaText);
 
