@@ -524,80 +524,56 @@ nav button:hover{
 }
 
 
-/* Starter section */
 .starters-section {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
     padding: 30px 4%;
-    background-color: #111;
 }
 
-/* Individual starter cards */
 .grilled-chicken,
 .crispy-spring,
 .bruschetta {
-    background-color: #191919;
-    border: 1px solid #252525;
-    overflow: hidden;
     min-width: 0;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
-/* Starter images */
 .grilled-chicken-image,
 .crispy-spring-image,
 .bruschetta-image {
     display: block;
     width: 100%;
-    height: 150px;
+    aspect-ratio: 4 / 3;
+    height: auto;
     object-fit: cover;
 }
 
-/* Text inside each card */
-.grilled-chicken-text,
-.crispy-spring-text,
-.bruschetta-text {
-    padding: 15px;
-    background-color: #191919;
-}
-
-/* Starter names */
-.grilled-chicken-text h3,
-.crispy-spring-text h3,
-.bruschetta-text h3 {
-    color: #f7f3ed;
-    font-family: Georgia, serif;
-    font-size: 17px;
-    font-weight: normal;
-    line-height: 1.4;
-    margin: 0 0 10px;
-}
-
-/* Starter descriptions */
-.grilled-chicken-text p,
-.crispy-spring-text p,
-.bruschetta-text p {
-    color: #a29e9e;
-    font-size: 12px;
-    line-height: 1.7;
-    margin: 0;
-}
-
-/* Responsive layout */
+/* Keep three columns at every screen width */
 @media (max-width: 768px) {
     .starters-section {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-@media (max-width: 500px) {
-    .starters-section {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+        padding: 20px 2%;
     }
 
-    .grilled-chicken-image,
-    .crispy-spring-image,
-    .bruschetta-image {
-        height: 200px;
+    .grilled-chicken-text,
+    .crispy-spring-text,
+    .bruschetta-text {
+        padding: 8px;
+    }
+
+    .grilled-chicken-text h3,
+    .crispy-spring-text h3,
+    .bruschetta-text h3 {
+        font-size: 13px;
+        overflow-wrap: anywhere;
+    }
+
+    .grilled-chicken-text p,
+    .crispy-spring-text p,
+    .bruschetta-text p {
+        font-size: 10px;
+        overflow-wrap: anywhere;
     }
 }
