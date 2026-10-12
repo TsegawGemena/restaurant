@@ -1,6 +1,10 @@
 import starterOne from "../images/starterOne.jpg";
 import starterTwo from "../images/starterTwo.webp";
 import starterThree from "../images/starterThree.webp";
+import mainCourseImageOne from "../images/mainCourseOne.jpeg";
+import mainCourseImageTwo from "../images/mainCourseTwo.jpeg";
+import mainCourseImageThree from "../images/mainCourseThree.webp";
+import mainCourseImageFour from "../images/mainCourseFour.webp";
 
 
 export function loadMenu(){
@@ -149,7 +153,166 @@ export function loadMenu(){
     content.appendChild(startersSection);
 
 
+    const mainCoursesSection = document.createElement("section");
+    mainCoursesSection.classList.add("main-courses-section");
 
+    const mainCoursesHeading = document.createElement("h2");
+    mainCoursesHeading.classList.add("main-courses-heading");
+    mainCoursesHeading.textContent = "Main Courses";
+
+    const mainCoursesGrid = document.createElement("div");
+    mainCoursesGrid.classList.add("main-courses-grid");
+
+    // MAIN COURSE ONE
+    const mainCourseOne = document.createElement("div");
+    mainCourseOne.classList.add("main-course-one");
+
+    const mainCourseOneImage = document.createElement("img");
+    mainCourseOneImage.classList.add("main-course-one-image");
+    mainCourseOneImage.src = mainCourseImageOne;
+    mainCourseOneImage.alt = "Grilled Chicken";
+
+    const mainCourseOneText = document.createElement("div");
+    mainCourseOneText.classList.add("main-course-one-text");
+
+    const mainCourseOneHeading = document.createElement("h3");
+    mainCourseOneHeading.textContent = "Grilled Chicken";
+
+    const mainCourseOnePrice = document.createElement("span");
+    mainCourseOnePrice.classList.add("main-course-price");
+    mainCourseOnePrice.textContent = "$32";
+
+    const mainCourseOneParagraph = document.createElement("p");
+    mainCourseOneParagraph.textContent =
+        "Free-range organic chicken breast with seasonal roasted root vegetables and herb reduction.";
+
+    const mainCourseOneCategory = document.createElement("span");
+    mainCourseOneCategory.classList.add("main-course-category");
+    mainCourseOneCategory.textContent = "Gluten-Free";
+
+    mainCourseOneText.appendChild(mainCourseOneHeading);
+    mainCourseOneText.appendChild(mainCourseOnePrice);
+    mainCourseOneText.appendChild(mainCourseOneParagraph);
+    mainCourseOneText.appendChild(mainCourseOneCategory);
+
+    mainCourseOne.appendChild(mainCourseOneImage);
+    mainCourseOne.appendChild(mainCourseOneText);
+
+    // MAIN COURSE TWO
+    const mainCourseTwo = document.createElement("div");
+    mainCourseTwo.classList.add("main-course-two");
+
+    const mainCourseTwoImage = document.createElement("img");
+    mainCourseTwoImage.classList.add("main-course-two-image");
+    mainCourseTwoImage.src = mainCourseImageTwo;
+    mainCourseTwoImage.alt = "Signature Beef Steak";
+
+    const mainCourseTwoText = document.createElement("div");
+    mainCourseTwoText.classList.add("main-course-two-text");
+
+    const mainCourseTwoHeading = document.createElement("h3");
+    mainCourseTwoHeading.textContent = "Signature Beef Steak";
+
+    const mainCourseTwoPrice = document.createElement("span");
+    mainCourseTwoPrice.classList.add("main-course-price");
+    mainCourseTwoPrice.textContent = "$48";
+
+    const mainCourseTwoParagraph = document.createElement("p");
+    mainCourseTwoParagraph.textContent =
+        "Prime dry-aged ribeye served with truffle potato puree, wild mushrooms, and red wine jus.";
+
+    const mainCourseTwoCategory = document.createElement("span");
+    mainCourseTwoCategory.classList.add("main-course-category");
+    mainCourseTwoCategory.textContent = "Chef's Choice";
+
+    mainCourseTwoText.appendChild(mainCourseTwoHeading);
+    mainCourseTwoText.appendChild(mainCourseTwoPrice);
+    mainCourseTwoText.appendChild(mainCourseTwoParagraph);
+    mainCourseTwoText.appendChild(mainCourseTwoCategory);
+
+    mainCourseTwo.appendChild(mainCourseTwoImage);
+    mainCourseTwo.appendChild(mainCourseTwoText);
+
+    // MAIN COURSE THREE
+    const mainCourseThree = document.createElement("div");
+    mainCourseThree.classList.add("main-course-three");
+
+    const mainCourseThreeImage = document.createElement("img");
+    mainCourseThreeImage.classList.add("main-course-three-image");
+    mainCourseThreeImage.src = mainCourseImageThree;
+    mainCourseThreeImage.alt = "Creamy Truffle Pasta";
+
+    const mainCourseThreeText = document.createElement("div");
+    mainCourseThreeText.classList.add("main-course-three-text");
+
+    const mainCourseThreeHeading = document.createElement("h3");
+    mainCourseThreeHeading.textContent = "Creamy Truffle Pasta";
+
+    const mainCourseThreePrice = document.createElement("span");
+    mainCourseThreePrice.classList.add("main-course-price");
+    mainCourseThreePrice.textContent = "$28";
+
+    const mainCourseThreeParagraph = document.createElement("p");
+    mainCourseThreeParagraph.textContent =
+        "Handmade tagliatelle with black summer truffle cream, aged parmesan, and cracked pepper.";
+
+    const mainCourseThreeCategory = document.createElement("span");
+    mainCourseThreeCategory.classList.add("main-course-category");
+    mainCourseThreeCategory.textContent = "Vegetarian";
+
+    mainCourseThreeText.appendChild(mainCourseThreeHeading);
+    mainCourseThreeText.appendChild(mainCourseThreePrice);
+    mainCourseThreeText.appendChild(mainCourseThreeParagraph);
+    mainCourseThreeText.appendChild(mainCourseThreeCategory);
+
+    mainCourseThree.appendChild(mainCourseThreeImage);
+    mainCourseThree.appendChild(mainCourseThreeText);
+
+    // MAIN COURSE FOUR
+    const mainCourseFour = document.createElement("div");
+    mainCourseFour.classList.add("main-course-four");
+
+    const mainCourseFourImage = document.createElement("img");
+    mainCourseFourImage.classList.add("main-course-four-image");
+    mainCourseFourImage.src = mainCourseImageFour;
+    mainCourseFourImage.alt = "Chef's Special Sea Bass";
+
+    const mainCourseFourText = document.createElement("div");
+    mainCourseFourText.classList.add("main-course-four-text");
+
+    const mainCourseFourHeading = document.createElement("h3");
+    mainCourseFourHeading.textContent = "Chef's Special Sea Bass";
+
+    const mainCourseFourPrice = document.createElement("span");
+    mainCourseFourPrice.classList.add("main-course-price");
+    mainCourseFourPrice.textContent = "$42";
+
+    const mainCourseFourParagraph = document.createElement("p");
+    mainCourseFourParagraph.textContent =
+        "Wild-caught Chilean sea bass with saffron risotto, crispy leeks, and lemon beurre blanc.";
+
+    const mainCourseFourCategory = document.createElement("span");
+    mainCourseFourCategory.classList.add("main-course-category");
+    mainCourseFourCategory.textContent = "Seafood";
+
+    mainCourseFourText.appendChild(mainCourseFourHeading);
+    mainCourseFourText.appendChild(mainCourseFourPrice);
+    mainCourseFourText.appendChild(mainCourseFourParagraph);
+    mainCourseFourText.appendChild(mainCourseFourCategory);
+
+    mainCourseFour.appendChild(mainCourseFourImage);
+    mainCourseFour.appendChild(mainCourseFourText);
+
+    // APPEND ALL FOUR MAIN COURSES
+    mainCoursesGrid.appendChild(mainCourseOne);
+    mainCoursesGrid.appendChild(mainCourseTwo);
+    mainCoursesGrid.appendChild(mainCourseThree);
+    mainCoursesGrid.appendChild(mainCourseFour);
+
+    mainCoursesSection.appendChild(mainCoursesHeading);
+    mainCoursesSection.appendChild(mainCoursesGrid);
+
+    content.appendChild(mainCoursesSection);
 
 
 
