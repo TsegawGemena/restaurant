@@ -538,7 +538,8 @@
 
     /* SECTION HEADINGS WITH GOLD ACCENT BAR */
     .menu-section-heading,
-    .main-courses-heading {
+    .main-courses-heading,
+    .desserts-heading {
         margin: 0 0 24px;
         color: #f7f3ed;
         font-size: 26px;
@@ -752,8 +753,130 @@
         display: none;
     }
 
+    /* DESSERTS SECTION */
+    .desserts-section {
+        padding: 0 8% 70px;
+        background-color: #111;
+        box-sizing: border-box;
+    }
+
+    /* DESSERTS GRID */
+    .desserts-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px;
+        width: 100%;
+        background-color: #111;
+        box-sizing: border-box;
+        align-items: stretch;
+    }
+
+    /* DESSERT CARDS */
+    .dessert-one,
+    .dessert-two,
+    .dessert-three {
+        min-width: 0;
+        overflow: hidden;
+        box-sizing: border-box;
+        background-color: #171717;
+        color: #f7f3ed;
+        border-radius: 12px;
+        border: 1px solid #282828;
+        padding: 14px;
+        transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .dessert-one:hover,
+    .dessert-two:hover,
+    .dessert-three:hover {
+        transform: translateY(-3px);
+        border-color: rgba(208, 179, 84, 0.4);
+    }
+
+    /* DESSERT IMAGES */
+    .dessert-one-image,
+    .dessert-two-image,
+    .dessert-three-image {
+        display: block;
+        width: 100%;
+        aspect-ratio: 16 / 11;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        transition: transform 0.4s ease;
+        cursor: pointer;
+    }
+
+    .dessert-one-image:hover,
+    .dessert-two-image:hover,
+    .dessert-three-image:hover {
+        transform: scale(1.02);
+    }
+
+    /* DESSERT TEXT CONTAINERS */
+    .dessert-one-text,
+    .dessert-two-text,
+    .dessert-three-text {
+        padding: 14px 2px 2px;
+        background-color: #171717;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: baseline;
+        gap: 4px 12px;
+    }
+
+    /* DESSERT HEADINGS */
+    .dessert-one-text h3,
+    .dessert-two-text h3,
+    .dessert-three-text h3 {
+        margin: 0;
+        color: #f7f3ed;
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 1.3;
+    }
+
+    /* DESSERT PRICES */
+    .dessert-price {
+        margin: 0;
+        color: #d0b354;
+        font-size: 17px;
+        font-weight: 700;
+        text-align: right;
+        white-space: nowrap;
+    }
+
+    /* DESSERT DESCRIPTIONS */
+    .dessert-one-text p,
+    .dessert-two-text p,
+    .dessert-three-text p {
+        grid-column: 1 / -1;
+        margin: 6px 0 0;
+        color: #888;
+        font-size: 13.5px;
+        line-height: 1.45;
+    }
+
+    /* MENU FOOTER */
+    .menu-footer {
+        padding: 30px 8% 40px;
+        text-align: center;
+        border-top: 1px solid #222;
+        background-color: #0f0e0e;
+    }
+
+    .menu-footer p {
+        margin: 0;
+        color: #777;
+        font-size: 12px;
+        letter-spacing: 0.3px;
+    }
+
     @media (max-width: 992px) {
-        .starters-section {
+        .starters-section,
+        .desserts-grid {
             grid-template-columns: repeat(2, minmax(0, 1fr));
             gap: 20px;
         }
@@ -765,15 +888,17 @@
     }
 
     @media (max-width: 768px) {
-
         .menu-section,
         .starters-section,
-        .main-courses-section {
+        .main-courses-section,
+        .desserts-section,
+        .menu-footer {
             padding-left: 5%;
             padding-right: 5%;
         }
 
-        .starters-section {
+        .starters-section,
+        .desserts-grid {
             grid-template-columns: 1fr;
             gap: 20px;
         }

@@ -5,6 +5,9 @@ import mainCourseImageOne from "../images/mainCourseOne.jpeg";
 import mainCourseImageTwo from "../images/mainCourseTwo.jpeg";
 import mainCourseImageThree from "../images/mainCourseThree.webp";
 import mainCourseImageFour from "../images/mainCourseFour.webp";
+import dessertImageOne from "../images/dessertOne.jpg";
+import dessertImageTwo from "../images/dessertTwo.webp";
+import dessertImageThree from "../images/dessertThree.jpeg";
 
 
 export function loadMenu(){
@@ -314,11 +317,127 @@ export function loadMenu(){
 
     content.appendChild(mainCoursesSection);
 
+    // DESSERTS SECTION
+    const dessertsSection = document.createElement("section");
+    dessertsSection.classList.add("desserts-section");
 
+    const dessertsHeading = document.createElement("h2");
+    dessertsHeading.classList.add("desserts-heading");
+    dessertsHeading.textContent = "Desserts";
 
+    const dessertsGrid = document.createElement("div");
+    dessertsGrid.classList.add("desserts-grid");
 
+    // DESSERT ONE
+    const dessertOne = document.createElement("div");
+    dessertOne.classList.add("dessert-one");
 
+    const dessertOneImage = document.createElement("img");
+    dessertOneImage.classList.add("dessert-one-image");
+    dessertOneImage.src = dessertImageOne;
+    dessertOneImage.alt = "Chocolate Tart";
 
+    const dessertOneText = document.createElement("div");
+    dessertOneText.classList.add("dessert-one-text");
+
+    const dessertOneHeading = document.createElement("h3");
+    dessertOneHeading.textContent = "Chocolate Tart";
+
+    const dessertOnePrice = document.createElement("span");
+    dessertOnePrice.classList.add("dessert-price");
+    dessertOnePrice.textContent = "$16";
+
+    const dessertOneParagraph = document.createElement("p");
+    dessertOneParagraph.textContent =
+        "Rich dark chocolate ganache in a crisp pastry crust with fresh berries and vanilla ice cream.";
+
+    dessertOneText.appendChild(dessertOneHeading);
+    dessertOneText.appendChild(dessertOnePrice);
+    dessertOneText.appendChild(dessertOneParagraph);
+
+    dessertOne.appendChild(dessertOneImage);
+    dessertOne.appendChild(dessertOneText);
+
+    // DESSERT TWO
+    const dessertTwo = document.createElement("div");
+    dessertTwo.classList.add("dessert-two");
+
+    const dessertTwoImage = document.createElement("img");
+    dessertTwoImage.classList.add("dessert-two-image");
+    dessertTwoImage.src = dessertImageTwo;
+    dessertTwoImage.alt = "Artisan Cheesecake";
+
+    const dessertTwoText = document.createElement("div");
+    dessertTwoText.classList.add("dessert-two-text");
+
+    const dessertTwoHeading = document.createElement("h3");
+    dessertTwoHeading.textContent = "Artisan Cheesecake";
+
+    const dessertTwoPrice = document.createElement("span");
+    dessertTwoPrice.classList.add("dessert-price");
+    dessertTwoPrice.textContent = "$14";
+
+    const dessertTwoParagraph = document.createElement("p");
+    dessertTwoParagraph.textContent =
+        "Velvety New York style cheesecake with a buttery graham crust and berry compote.";
+
+    dessertTwoText.appendChild(dessertTwoHeading);
+    dessertTwoText.appendChild(dessertTwoPrice);
+    dessertTwoText.appendChild(dessertTwoParagraph);
+
+    dessertTwo.appendChild(dessertTwoImage);
+    dessertTwo.appendChild(dessertTwoText);
+
+    // DESSERT THREE
+    const dessertThree = document.createElement("div");
+    dessertThree.classList.add("dessert-three");
+
+    const dessertThreeImage = document.createElement("img");
+    dessertThreeImage.classList.add("dessert-three-image");
+    dessertThreeImage.src = dessertImageThree;
+    dessertThreeImage.alt = "Fresh Fruit Tart";
+
+    const dessertThreeText = document.createElement("div");
+    dessertThreeText.classList.add("dessert-three-text");
+
+    const dessertThreeHeading = document.createElement("h3");
+    dessertThreeHeading.textContent = "Fresh Fruit Tart";
+
+    const dessertThreePrice = document.createElement("span");
+    dessertThreePrice.classList.add("dessert-price");
+    dessertThreePrice.textContent = "$15";
+
+    const dessertThreeParagraph = document.createElement("p");
+    dessertThreeParagraph.textContent =
+        "Seasonal fresh fruits atop delicate custard in a sweet butter pastry shell.";
+
+    dessertThreeText.appendChild(dessertThreeHeading);
+    dessertThreeText.appendChild(dessertThreePrice);
+    dessertThreeText.appendChild(dessertThreeParagraph);
+
+    dessertThree.appendChild(dessertThreeImage);
+    dessertThree.appendChild(dessertThreeText);
+
+    // APPEND ALL THREE DESSERTS
+    dessertsGrid.appendChild(dessertOne);
+    dessertsGrid.appendChild(dessertTwo);
+    dessertsGrid.appendChild(dessertThree);
+
+    dessertsSection.appendChild(dessertsHeading);
+    dessertsSection.appendChild(dessertsGrid);
+
+    content.appendChild(dessertsSection);
+
+    // MENU FOOTER
+    const menuFooter = document.createElement("footer");
+    menuFooter.classList.add("menu-footer");
+
+    const menuFooterText = document.createElement("p");
+    menuFooterText.textContent =
+        "© 2024 Aveline Restaurant. All rights reserved. Hours: Tue-Sun 5pm - 11pm.";
+
+    menuFooter.appendChild(menuFooterText);
+    content.appendChild(menuFooter);
 };
 
 
