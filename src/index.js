@@ -24,8 +24,6 @@ function showHome(){
 }
 homeButton.addEventListener("click", showHome);
 
-menuButton.addEventListener("click", showHome);
-
 menuButton.addEventListener("click", () =>{
     showPage(loadMenu);
 });
