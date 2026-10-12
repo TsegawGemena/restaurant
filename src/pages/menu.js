@@ -63,6 +63,10 @@ export function loadMenu(){
     const grilledChickenHeading = document.createElement("h3");
     grilledChickenHeading.textContent = "Grilled Chicken Skewers With Herb Yogurt Dip";
 
+    const grilledChickenPrice = document.createElement("span");
+    grilledChickenPrice.classList.add("starter-price");
+    grilledChickenPrice.textContent = "$18";
+
     const grilledChickenTextParagraph = document.createElement("p");
     grilledChickenTextParagraph.textContent = "Tender, flame-grilled chicken skewers marinated in aromatic spices, served over fresh greens with a zesty lime wedge adn a creamy herb yogurt dip. A flavorful, satisfying starter with a smoky finish and refreshing touch.";
     
@@ -71,6 +75,7 @@ export function loadMenu(){
     grilledChickenCategory.textContent = "GRILLED . CHEF'S SPECIAL";
 
     grilledChickenText.appendChild(grilledChickenHeading);
+    grilledChickenText.appendChild(grilledChickenPrice);
     grilledChickenText.appendChild(grilledChickenTextParagraph);
     grilledChickenText.appendChild(grilledChickenCategory);
 
@@ -99,6 +104,10 @@ export function loadMenu(){
     const crispySpringHeading = document.createElement("h3");
     crispySpringHeading.textContent = "Crispy Spring Rolls";
     
+    const crispySpringPrice = document.createElement("span");
+    crispySpringPrice.classList.add("starter-price");
+    crispySpringPrice.textContent = "$14";
+
     const crispySpringParagraph = document.createElement("p");
     crispySpringParagraph.textContent = "Golden, crispy spring rolls filled with a delicious savor mixture of fresh vegetables and flavorful seasonings. Served hot with a tasty dipping sauce, they are the perfect crunchy and satisfying start to your meal.";
     
@@ -111,6 +120,7 @@ export function loadMenu(){
 
 
     crispySpringText.appendChild(crispySpringHeading);
+    crispySpringText.appendChild(crispySpringPrice);
     crispySpringText.appendChild(crispySpringParagraph);
     crispySpringText.appendChild(crispySpringCategory);
 
@@ -134,6 +144,10 @@ export function loadMenu(){
     const bruschettaHeading = document.createElement("h3");
     bruschettaHeading.textContent = "Fresh Tomato Bruschetta";
 
+    const bruschettaPrice = document.createElement("span");
+    bruschettaPrice.classList.add("starter-price");
+    bruschettaPrice.textContent = "$16";
+
     const bruschettaParagraph = document.createElement("p");
     bruschettaParagraph.textContent ="A classic Italian starter featuring toasted slices of bread topped with juicy diced tomatoes, fresh basil, and a touch of olive oil. Light,fresh, and full of flavor, it is a delightful appetizer to enjoy before your main course.";
     
@@ -144,6 +158,7 @@ export function loadMenu(){
 
 
     bruschettaText.appendChild(bruschettaHeading);
+    bruschettaText.appendChild(bruschettaPrice);
     bruschettaText.appendChild(bruschettaParagraph);
         bruschettaText.appendChild(bruschettaCategory);
 

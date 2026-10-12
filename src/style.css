@@ -610,22 +610,37 @@
         padding: 14px 2px 2px;
         background-color: #171717;
         box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: baseline;
+        gap: 4px 12px;
     }
 
     .grilled-chicken-text h3,
     .crispy-spring-text h3,
     .bruschetta-text h3 {
-        margin: 0 0 8px;
+        margin: 0;
         color: #f7f3ed;
         font-size: 17px;
         font-weight: 700;
         line-height: 1.3;
     }
 
+    /* STARTER PRICES */
+    .starter-price {
+        margin: 0;
+        color: #d0b354;
+        font-size: 17px;
+        font-weight: 700;
+        text-align: right;
+        white-space: nowrap;
+    }
+
     .grilled-chicken-text p,
     .crispy-spring-text p,
     .bruschetta-text p {
-        margin: 0 0 10px;
+        grid-column: 1 / -1;
+        margin: 6px 0 0;
         color: #888;
         font-size: 13.5px;
         line-height: 1.45;
